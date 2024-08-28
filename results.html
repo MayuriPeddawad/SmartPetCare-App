@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+</head>
+<body>
+    <h1>Pet Health Assessment</h1>
+    <img src="{{ url_for('static', filename='uploads/' + filepath.split('/')[-1]) }}" alt="Pet Image">
+    <p>Health Status: {{ result }}</p>
+    <a href="/">Go Back</a>
+</body>
+</html>
